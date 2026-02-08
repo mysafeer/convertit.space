@@ -2,86 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertit.space | AI-Driven Transformation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ConvertIt Pro - Elite AI Suite</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .ai-gradient {
-            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#f0f4ff', 100: '#d9e2ff', 200: '#b8caff', 300: '#8da6ff',
+                400: '#5c76ff', 500: '#2d3eff', 600: '#1d26d8', 700: '#151bb0',
+                800: '#151b8d', 900: '#0f1454', 950: '#080a2b',
+              }
+            }
+          }
         }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root { touch-action: pan-x pan-y; -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s ease; overflow-x: hidden; }
+        .dark body { background-color: #020617; }
+        .glass { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        input, select, textarea { font-size: 16px !important; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
     </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@0.2.1",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
 </head>
-<body class="bg-white text-slate-900">
-
-    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
-        <div class="text-2xl font-bold tracking-tighter">CONVERT<span class="text-blue-600">IT.SPACE</span></div>
-        <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest">
-            <a href="#mission" class="hover:text-blue-600">Mission</a>
-            <a href="#services" class="hover:text-blue-600">AI Agents</a>
-        </div>
-    </nav>
-
-    <section class="py-20 px-6 text-center">
-        <h1 class="text-6xl font-extrabold mb-6 tracking-tight">
-            The Future of <span class="ai-gradient">Autonomous Space.</span>
-        </h1>
-        <p class="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed italic">
-            "Bridging the gap between human intent and digital execution through intelligent conversion."
-        </p>
-    </section>
-
-    <section id="mission" class="bg-slate-50 py-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-blue-600 font-bold mb-4 uppercase tracking-widest text-sm text-center">Our Mission</h2>
-            <p class="text-2xl md:text-3xl text-center font-light leading-snug">
-                At <strong>Convertit.space</strong>, we deploy autonomous <span class="text-blue-600 font-medium">AI agents</span> to transform static data into intelligent, spatial solutions. We don't just process information; we convert potential into reality.
-            </p>
-        </div>
-    </section>
-
-    <section id="services" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-8 border border-slate-100 rounded-3xl bg-white shadow-sm hover:shadow-xl transition">
-                <div class="text-blue-600 mb-4 text-3xl">🤖</div>
-                <h3 class="text-xl font-bold mb-2">Autonomous Agents</h3>
-                <p class="text-slate-500 text-sm">Self-learning agents that handle complex conversion tasks without manual oversight.</p>
-            </div>
-            <div class="p-8 border border-slate-100 rounded-3xl bg-white shadow-sm hover:shadow-xl transition">
-                <div class="text-blue-600 mb-4 text-3xl">📊</div>
-                <h3 class="text-xl font-bold mb-2">Data Spatialization</h3>
-                <p class="text-slate-500 text-sm">Converting raw datasets into 3D environments and interactive spatial models.</p>
-            </div>
-            <div class="p-8 border border-slate-100 rounded-3xl bg-white shadow-sm hover:shadow-xl transition">
-                <div class="text-blue-600 mb-4 text-3xl">⚡</div>
-                <h3 class="text-xl font-bold mb-2">Instant Execution</h3>
-                <p class="text-slate-500 text-sm">Real-time processing that turns your ideas into deployed assets in seconds.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="p-10 text-center text-slate-400 text-xs">
-        &copy; 2026 CONVERTIT.SPACE | Powered by AI Agents
-    </footer>
-
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
-/project-root
-├── components/
-│   ├── Header.tsx
-│   ├── UnitConverter.tsx
-│   ├── SmartConverter.tsx
-│   ├── DataConverter.tsx
-│   ├── SalesAgent.tsx
-│   └── Feedback.tsx
-├── services/
-│   └── geminiService.ts
-├── App.tsx
-├── constants.tsx
-├── types.ts
-├── index.tsx
-├── index.html
-└── metadata.json
