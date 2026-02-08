@@ -1,0 +1,96 @@
+
+Airlinks Travel
+10:17 (4 minutes ago)
+to me
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converted.space | Evolution of Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap');
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            scroll-behavior: smooth;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass-effect px-6 py-3 rounded-2xl shadow-sm">
+            <div class="text-xl font-bold tracking-tighter">
+                CONVERTED<span class="text-blue-600">.SPACE</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#vision" class="hover:text-blue-600 transition">Vision</a>
+                <a href="#data" class="hover:text-blue-600 transition">Data</a>
+                <a href="mailto:hello@converted.space" class="bg-slate-900 text-white px-5 py-2 rounded-xl hover:bg-blue-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="px-4 py-1.5 bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-widest rounded-full">New Project Launch</span>
+            <h1 class="mt-8 text-5xl md:text-8xl font-bold tracking-tight mb-6">
+                Space is <span class="gradient-text">Converted.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+                We are rebuilding. Transforming raw data into spatial experiences. Our new digital environment is currently being optimized.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#vision" class="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white rounded-2xl font-semibold shadow-xl shadow-blue-200 hover:bg-blue-700 transition transform hover:-translate-y-1">
+                    Explore the Idea
+                </a>
+                <div class="flex items-center text-sm text-slate-400">
+                    <span class="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
+                    System Online
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="vision" class="max-w-6xl mx-auto px-6 py-12">
+        <div class="relative group cursor-pointer overflow-hidden rounded-3xl bg-slate-200 aspect-[16/9] border border-slate-200">
+            <div class="absolute inset-0 flex items-center justify-center text-slate-400">
+                <p class="text-center px-10">
+                    <strong class="text-slate-600 block mb-2">Visual Placeholder</strong>
+                    Move your renamed "Replica" image here and update the code src.
+                </p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000" 
+                 alt="Vision" 
+                 class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700">
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-200 mt-20 py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-slate-400 text-sm">© 2026 Converted.space. All rights reserved.</p>
+            <div class="flex space-x-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-blue-600">GitHub</a>
+                <a href="#" class="hover:text-blue-600">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
