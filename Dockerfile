@@ -1,11 +1,18 @@
-# Use a lightweight web server to serve static files
-FROM nginx:alpine
+# Use Node.js for the backend
+FROM node:18-alpine
 
-# Copy the project files to the nginx html directory
-COPY . /usr/share/nginx/html
+# Set working directory
+WORKDIR /app
 
-# Expose port 80
-EXPOSE 80
+# Copy package files and install dependencies
+COPY package*.json ./
+RUN npm install
 
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Copy the rest of the application
+COPY . .
+
+# Expose the backend port
+EXPOSE 3001
+
+# Start the backend server
+CMD ["npm", "start"]
