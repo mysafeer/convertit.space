@@ -1,8 +1,5 @@
 {
-  "name": "CONVERIT.SPACE",
-  "description": "Converit.Space is an elite intelligence suite providing universal parsing for any unit, data, or structural conversion intent with hyper-accurate precision. Beyond logic, it features a high-end autonomous Deal Closer agent designed to engage leads, optimize sales pipelines, and secure high-value transactions instantly.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
+  "name": "ConvertIt.Space",
+  "description": "The AI Command Center for intelligent document conversion and autonomous sales lead conversion agents.",
+  "requestFramePermissions": []
 }
